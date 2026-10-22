@@ -1,0 +1,87 @@
+[
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "INFO",
+    "task_type": "agent_run",
+    "message": "Communication Agent started",
+    "details": {
+      "dry_run": true
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "INFO",
+    "task_type": "send_email",
+    "message": "Starting task: Send Daily Sales Report Email",
+    "details": {
+      "name": "Send Daily Sales Report Email"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "SUCCESS",
+    "task_type": "send_email",
+    "message": "Task completed: Send Daily Sales Report Email",
+    "details": {
+      "output_context_key": "sales_email_result",
+      "result": true
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "INFO",
+    "task_type": "send_sms",
+    "message": "Task skipped because it is disabled: Send Sales Alert SMS",
+    "details": {
+      "name": "Send Sales Alert SMS"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "INFO",
+    "task_type": "send_email",
+    "message": "Task skipped because it is disabled: Simulate Incoming Request Email (to self)",
+    "details": {
+      "name": "Simulate Incoming Request Email (to self)"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "INFO",
+    "task_type": "process_inbox",
+    "message": "Starting task: Process Incoming Data Requests",
+    "details": {
+      "name": "Process Incoming Data Requests"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "SUCCESS",
+    "task_type": "process_inbox",
+    "message": "Task completed: Process Incoming Data Requests",
+    "details": {
+      "output_context_key": "processed_inbox_results",
+      "result": true
+    }
+  },
+  {
+    "timestamp": "2026-10-22T19:22:46+07:00",
+    "status": "INFO",
+    "task_type": "agent_run",
+    "message": "Communication Agent finished",
+    "details": {
+      "duration_seconds": 0.0,
+      "dry_run": true,
+      "context_keys": [
+        "attachment_path_1",
+        "attachment_path_2",
+        "processed_inbox_results",
+        "report_date",
+        "report_name",
+        "sales_email_result",
+        "sales_figure",
+        "total_customers"
+      ]
+    }
+  }
+]

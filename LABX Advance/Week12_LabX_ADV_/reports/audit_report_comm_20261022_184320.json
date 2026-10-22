@@ -1,0 +1,83 @@
+[
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "INFO",
+    "task_type": "agent_run",
+    "message": "Communication Agent started",
+    "details": {
+      "dry_run": true
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "INFO",
+    "task_type": "send_email",
+    "message": "Starting task: Send Daily Sales Report Email",
+    "details": {
+      "name": "Send Daily Sales Report Email"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "ERROR",
+    "task_type": "send_email",
+    "message": "Task failed: Send Daily Sales Report Email: maximum recursion depth exceeded",
+    "details": {
+      "error": "maximum recursion depth exceeded"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "INFO",
+    "task_type": "send_sms",
+    "message": "Task skipped because it is disabled: Send Sales Alert SMS",
+    "details": {
+      "name": "Send Sales Alert SMS"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "INFO",
+    "task_type": "send_email",
+    "message": "Task skipped because it is disabled: Simulate Incoming Request Email (to self)",
+    "details": {
+      "name": "Simulate Incoming Request Email (to self)"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "INFO",
+    "task_type": "process_inbox",
+    "message": "Starting task: Process Incoming Data Requests",
+    "details": {
+      "name": "Process Incoming Data Requests"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "ERROR",
+    "task_type": "process_inbox",
+    "message": "Task failed: Process Incoming Data Requests: maximum recursion depth exceeded",
+    "details": {
+      "error": "maximum recursion depth exceeded"
+    }
+  },
+  {
+    "timestamp": "2026-10-22T18:43:20+07:00",
+    "status": "INFO",
+    "task_type": "agent_run",
+    "message": "Communication Agent finished",
+    "details": {
+      "duration_seconds": 0.06,
+      "dry_run": true,
+      "context_keys": [
+        "attachment_path_1",
+        "attachment_path_2",
+        "report_date",
+        "report_name",
+        "sales_figure",
+        "total_customers"
+      ]
+    }
+  }
+]
